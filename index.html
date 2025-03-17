@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- Header                            -->
+    <!-- ================================= -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">ARdyyyyBlog</h2>
+            </a>
+
+            <div class="menu" id="menu">
+
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./post.html" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./contact.html" class="list-link">Reviews</a>
+                    </li>
+                    <li class=list-item">
+                        <a href="./contact.html" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./contact.html" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./contact.html" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./contact.html" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./contact.html" class="list-link">Sign up</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="list list-right">
+
+                <button class="btn place-item-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-item-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-item-center screen-lg-hidden menu-toggle-icon" id="theme-toggle-btn">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                    <span>Sign in</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================================= -->
+    <!-- Search                            -->
+    <!-- ================================= -->
+    <div class="search-form-container" id="search-form-container">
+
+        <div class="form-container-inner">
+            <form action="" class="form">
+                <input type="text" placeholder="what are u lookin' for ?" class="form-input">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-eye-line"></i>
+                </button>
+            </form>
+            <span class="form-note">or press ESC to close.</span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+
+    <!-- ================================ -->
+    <!-- Featured articles -->
+    <!-- ================================ -->
+    <section class="featured-articles section section-header-offset">
+        <div class="featured-articles-container containder d-grid">
+
+            <div class="featured-content d-grid">
+
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-item-center">Breaking News</span>
+                    </h3>
+                    <span class="headline-desc">Apple announces a new partnership</span>
+                </div>
+
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/images/featured/featured-1.jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>
+
+                        <h3 class="article-title title">Is VR the future?</h3>
+                    </div>
+                </a>
+
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/images/featured/featured-2.jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>
+
+                        <h3 class="article-title title">Is VR the future?</h3>
+                    </div>
+                </a>
+
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/images/featured/featured-3.jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>
+
+                        <h3 class="article-title title">Is VR the future?</h3>
+                    </div>
+                </a>
+
+            </div>
+            <!-- ================================= -->
+            <!-- sidebar -->
+            <!-- ================================= -->
+            <div class="sidebar d-grid">
+                <h3 class="title featured-content-title">Trending News</h3>
+
+                <a href="" class="trending-news-box">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-item-center">01</span>
+                        <img src="./assets/images/trending/trending_1.jpg" class="article-image" alt="">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>'
+
+                        <h3 class="article-title title">Sample article title</h3>
+                    </div>
+                </a>
+
+                <a href="" class="trending-news-box">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-item-center">01</span>
+                        <img src="./assets/images/trending/trending_2.jpg" class="article-image" alt="">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>'
+
+                        <h3 class="article-title title">Sample article title</h3>
+                    </div>
+                </a>
+
+                <a href="" class="trending-news-box">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-item-center">01</span>
+                        <img src="./assets/images/trending/trending_3.jpg" class="article-image" alt="">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>'
+
+                        <h3 class="article-title title">Sample article title</h3>
+                    </div>
+                </a>
+
+                <a href="" class="trending-news-box">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-item-center">01</span>
+                        <img src="./assets/images/trending/trending_4.jpg" class="article-image" alt="">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>'
+
+                        <h3 class="article-title title">Sample article title</h3>
+                    </div>
+                </a>
+                <a href="" class="trending-news-box">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-item-center">01</span>
+                        <img src="./assets/images/trending/trending_5.jpg" class="article-image" alt="">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min read</span>
+                        </div>'
+
+                        <h3 class="article-title title">Sample article title</h3>
+                    </div>
+                </a>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Quick Read -->
+    <!-- Older post -->
+    <!-- Popular Tags -->
+    <!-- Newsletter -->
+    <!-- Footer -->
+</body>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</html>
