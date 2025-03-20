@@ -60,7 +60,6 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-
 // ===========================================
 // Switch theme/add to local storage
 // ===========================================
@@ -80,6 +79,48 @@ themeToggleBtn.addEventListener("click", () => {
     localStorage.removeItem("currentTheme");
   }
 });
+
 // ===========================================
 // Swiper
 // ===========================================
+const swiper = new Swiper(".swiper", {
+  // Enable infinite loop for endless scrolling
+  loop: true,
+  
+  slidesPerView: 1,
+  spaceBetween: 20,
+  
+  // Add smooth sliding effect
+  speed: 600,
+  
+  // Enable grab cursor when hovering over swiper
+  grabCursor: true,
+  
+  // Auto height adjustment
+  autoHeight: true,
+  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Allow clicking on pagination bullets
+  },
+  
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3, // Changed from 4 to 3 cards per view
+      spaceBetween: 30,
+    },
+  },
+});
